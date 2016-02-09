@@ -1,0 +1,1 @@
+empty es6 sfjs module
