@@ -138,31 +138,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	//resolved by webpack's "externals"
 	
-	var proto = _sf2.default.createModulePrototype();
-	
-	var Module = function (_proto) {
-	    (0, _inherits3.default)(Module, _proto);
+	var Module = function (_sf$modules$core$Base) {
+	    (0, _inherits3.default)(Module, _sf$modules$core$Base);
 	
 	    function Module(sf, node, options) {
 	        (0, _classCallCheck3.default)(this, Module);
-	
-	        //Object.assign(this.__proto__, sf.createModulePrototype().__proto__);
-	        debugger;
-	
-	        var _this = (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(Module).call(this));
-	
-	        _this.name = 'module';
-	        return _this;
+	        return (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(Module).call(this));
 	    }
 	
 	    (0, _createClass3.default)(Module, [{
 	        key: 'die',
 	        value: function die() {}
+	    }, {
+	        key: 'name',
+	        get: function get() {
+	            return 'module';
+	        }
 	    }]);
 	    return Module;
-	}(proto);
+	}(_sf2.default.modules.core.BaseDOMConstructor);
 	
-	Module.prototype.name = 'module';
 	exports.default = Module;
 
 /***/ },
